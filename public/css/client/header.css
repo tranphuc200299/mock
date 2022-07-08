@@ -1,0 +1,420 @@
+:root {
+    --unnamed-color-f5f9fe: #F5F9FE;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-1e1e1e: #1E1E1E;
+    --unnamed-color-004af8: #004AF8;
+    --unnamed-color-cccccc: #CCCCCC;
+    --unnamed-color-515050: #515050;
+    --unnamed-color-5f8fff: #5F8FFF;
+    --unnamed-color-4b4b4b: #4B4B4B;
+    --unnamed-color-0eafff: #0EAFFF;
+    --unnamed-color-53b5ff: #53B5FF;
+    --unnamed-color-ff5151: #FF5151;
+    --unnamed-color-1045a2: #1045A2;
+    --unnamed-color-d5d5d5: #D5D5D5;
+    --unnamed-color-000000: #000000;
+    --unnamed-color-fdd604: #FDD604;
+    --unnamed-color-b4b4b4: #B4B4B4;
+    --unnamed-color-6acbfc: #6ACBFC;
+    --unnamed-color-97aef8: #97AEF8;
+    --unnamed-color-143672: #143672;
+    --unnamed-color-808080: #808080;
+    --unnamed-color-cad0c6: #CAD0C6;
+    --unnamed-color-333333: #333333;
+    --unnamed-color-b6b6b6: #B6B6B6;
+    --unnamed-color-0153ce: #0153CE;
+    --unnamed-color-0550bf: #0550BF;
+    --unnamed-color-f4f4f4: #F4F4F4;
+    --unnamed-color-00000033: #00000033;
+    --unnamed-color-ffffffa8: #FFFFFFA8;
+    --unnamed-color-221613: #221613;
+    --unnamed-color-cfcfcf: #CFCFCF;
+    --unnamed-color-bcbcbc: #BCBCBC;
+    --unnamed-color-16ca02: #16CA02;
+    --unnamed-color-cdcdcd: #CDCDCD;
+    --unnamed-color-b3b3b3: #B3B3B3;
+    --unnamed-color-f5f5f5: #F5F5F5;
+    --unnamed-color-f61717: #F61717;
+    --unnamed-color-6a6a6a: #6A6A6A;
+    --unnamed-color-d3d3d3: #D3D3D3;
+    --unnamed-color-0eafffd6: #0EAFFFD6;
+    --unnamed-color-4285f4: #4285F4;
+
+    /* Font/text values */
+    --unnamed-font-family-hiragino-kaku-gothic-pro: Hiragino Kaku Gothic Pro;
+    --unnamed-font-family-source-han-sans: Source Han Sans;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-900: 900px;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-8: 8px;
+    --unnamed-font-size-9: 9px;
+    --unnamed-font-size-11: 11px;
+    --unnamed-font-size-12: 12px;
+    --unnamed-font-size-13: 13px;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-15: 15px;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-22: 22px;
+    --unnamed-font-size-24: 24px;
+    --unnamed-font-size-26: 26px;
+    --unnamed-font-size-27: 27px;
+    --unnamed-font-size-28: 28px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing--1-35: -1.35px;
+    --unnamed-character-spacing--0-6: -0.6px;
+    --unnamed-line-spacing-11: 11px;
+    --unnamed-line-spacing-13: 13px;
+    --unnamed-line-spacing-14: 14px;
+    --unnamed-line-spacing-16: 16px;
+    --unnamed-line-spacing-17: 17px;
+    --unnamed-line-spacing-18: 18px;
+    --unnamed-line-spacing-19: 19px;
+    --unnamed-line-spacing-20: 20px;
+    --unnamed-line-spacing-21: 21px;
+    --unnamed-line-spacing-22: 22px;
+    --unnamed-line-spacing-23: 23px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-27: 27px;
+    --unnamed-line-spacing-29: 29px;
+    --unnamed-line-spacing-33: 33px;
+    --unnamed-line-spacing-36: 36px;
+    --unnamed-line-spacing-39: 39px;
+    --unnamed-line-spacing-41: 41px;
+    --unnamed-line-spacing-43: 43px;
+    --unnamed-line-spacing-45: 45px;
+    --unnamed-line-spacing-51: 51px;
+    --unnamed-decoration-underline: underline;
+
+
+
+}
+
+/*responsive*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
+@media (min-width: 1349px) {
+    .container {
+        max-width: 998px !important;
+    }
+}
+.content-header {
+  display: flex;
+  align-items: center;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+@media (max-width: 1024px) {
+  .content-header {
+    justify-content: space-between;
+  }
+}
+.content-header .logo {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-900) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-51) var(--unnamed-font-family-source-han-sans);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-004af8);
+  text-align: left;
+  font: normal normal 900 30px/51px Source Han Sans;
+  letter-spacing: 0px;
+  color: var(--unnamed-color-004af8);
+  cursor: pointer;
+}
+.content-header .notifications {
+  display: flex;
+  align-items: center;
+}
+.content-header .notifications .message {
+  padding-left: 20px;
+  padding-right: 50px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-808080);
+  text-align: left;
+  font: normal normal normal 12px/18px Hiragino Kaku Gothic Pro;
+  letter-spacing: 0px;
+  color: #808080;
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .message {
+    display: none;
+  }
+}
+.content-header .notifications .keep-list, .content-header .notifications .browsing-history, .content-header .notifications .login-responsive {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid var(--unnamed-color-808080);
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .keep-list, .content-header .notifications .browsing-history, .content-header .notifications .login-responsive {
+    border: none;
+  }
+}
+.content-header .notifications .keep-list p, .content-header .notifications .browsing-history p, .content-header .notifications .login-responsive p {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-333333);
+  text-align: center;
+  font: normal normal normal 12px/16px Hiragino Kaku Gothic Pro;
+  letter-spacing: 0px;
+  color: #333333;
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .keep-list p, .content-header .notifications .browsing-history p, .content-header .notifications .login-responsive p {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-8)/var(--unnamed-line-spacing-11) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-004af8);
+    text-align: center;
+    font: normal normal normal 8px/11px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #004AF8;
+  }
+}
+.content-header .notifications .keep-list img, .content-header .notifications .browsing-history img, .content-header .notifications .login-responsive img {
+  margin-bottom: 6px;
+}
+.content-header .notifications .keep-list label, .content-header .notifications .browsing-history label, .content-header .notifications .login-responsive label {
+  position: absolute;
+  top: -5px;
+  right: 30px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-9)/var(--unnamed-line-spacing-14) var(--unnamed-font-family-hiragino-kaku-gothic-pro) !important;
+  letter-spacing: var(--unnamed-character-spacing-0) !important;
+  color: var(--unnamed-color-ffffff) !important;
+  text-align: center;
+  font: normal normal normal 9px/14px Hiragino Kaku Gothic Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  background: var(--unnamed-color-0eafff) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-ffffff);
+  background: #0EAFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+  padding: 3px 8px;
+  border-radius: 50%;
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .keep-list label, .content-header .notifications .browsing-history label, .content-header .notifications .login-responsive label {
+    right: 22px;
+    padding: 2px 7px;
+  }
+}
+.content-header .notifications .keep-list {
+  border-left: 1px solid var(--unnamed-color-808080);
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .keep-list {
+    border: none;
+  }
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .keep-list img {
+    display: none;
+  }
+}
+.content-header .notifications .keep-list .star-blue {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .keep-list .star-blue {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .browsing-history {
+    display: none !important;
+  }
+}
+.content-header .notifications .browsing-history label {
+  right: 18px;
+}
+.content-header .notifications p {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-808080);
+  text-align: left;
+  font: normal normal normal 12px/18px Hiragino Kaku Gothic Pro;
+  letter-spacing: 0px;
+  color: var(--unnamed-color-808080);
+}
+.content-header .notifications .login-responsive {
+  padding: 0px;
+}
+.content-header .notifications .login-responsive .login {
+  display: none;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .login-responsive .login {
+    display: block !important;
+  }
+}
+.content-header .notifications .open-menu {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .content-header .notifications .open-menu {
+    display: block !important;
+  }
+}
+.content-header .notifications .open-menu .line {
+  width: 30px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: var(--unnamed-color-004af8);
+  margin-bottom: 7px;
+}
+.content-header .login {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .content-header .login {
+    display: none;
+  }
+}
+.content-header .login .btn-sign-in {
+  background: var(--unnamed-color-0eafff) 0% 0% no-repeat padding-box;
+  background: #0EAFFF 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  padding: 7px 27px;
+  margin-left: 29px;
+  margin-right: 10px;
+}
+.content-header .login .btn-sign-in a {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal normal 16px/24px Hiragino Kaku Gothic Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+.content-header .login .btn-login {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border: 2px solid var(--unnamed-color-004af8);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #004AF8;
+  border-radius: 7px;
+  padding: 5px 27px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.content-header .login .btn-login a {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-004af8);
+  text-align: center;
+  font: normal normal normal 16px/24px Hiragino Kaku Gothic Pro;
+  letter-spacing: 0px;
+  color: #004AF8;
+}
+.content-header .login .btn-login img {
+  margin-right: 10px;
+}
+.content-header .login .login-success {
+  margin-left: 50px;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .over_lay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    opacity: 0.5;
+    background-color: #5c5c5c;
+    display: none;
+  }
+}
+
+.menu {
+  background: var(--unnamed-color-004af8) 0% 0% no-repeat padding-box;
+  background: #004AF8 0% 0% no-repeat padding-box;
+  transition: ease-out 1s;
+}
+@media (max-width: 1024px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    width: 50vw;
+    height: 100vh;
+    z-index: 999;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    width: 100vw;
+  }
+}
+.menu .close-menu {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: none;
+}
+@media (max-width: 1024px) {
+  .menu .close-menu {
+    display: block;
+  }
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 13px 110px;
+}
+@media (max-width: 1024px) {
+  .menu ul {
+    padding: 0;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+}
+.menu ul li {
+  padding-left: 42px;
+  padding-right: 42px;
+  list-style-type: none;
+}
+@media (max-width: 1024px) {
+  .menu ul li {
+    margin-top: 20px;
+  }
+}
+.menu ul li a {
+  text-decoration: none;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal normal 16px/24px Hiragino Kaku Gothic Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.browsing-history img{
+    width: 26px!important;
+}

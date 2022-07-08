@@ -1,0 +1,162 @@
+.btn-add-new {
+    padding: 4px 28px;
+    background: #169BD5;
+    color: #ffff;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+.btn-add-new:hover {
+    background: #0986bd;
+    color: #ffff;
+}
+
+.btn-delete,
+.btn-edit {
+    border-radius: 4px;
+}
+
+.btn-delete {
+    color: #FFFFFF;
+    background: #a90010;
+}
+
+.btn-delete:hover {
+    color: #ffff;
+    background: rgba(161, 32, 44, 0.66);
+}
+
+.btn-edit {
+    background: #fad4d4;
+    border: solid 2px #000000;
+}
+
+.btn-edit:hover {
+    background: #ffbfbf;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn-wrapper .btn-upload {
+    color: #464646;
+    padding: 8px 20px;
+    font-size: 20px;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    height: 0;
+}
+
+.btn-dropdown {
+    background: #FFFFFF;
+}
+
+#nav-tabContent {
+    padding: 0 34px;
+}
+
+.radio-button {
+    margin-left: 20px;
+}
+
+.radio-button-2 {
+    margin-left: 40px;
+}
+
+.form-button button {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px;
+    margin-left: 20px;
+}
+
+.nav-tabContent-company .form-group input {
+    height: 80px;
+}
+
+.nav-tabContent-company .form-group select {
+    height: 80px;
+}
+
+.nav-tabContent-company.form-group placeholder {
+
+    margin-top: 0;
+}
+
+.nav-tabContent-company .form-group textarea {
+    height: 150px;
+}
+
+.nav-tabContent-company.modal-footer button {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px;
+    margin-left: 20px;
+}
+
+.selec2-career {
+    position: absolute;
+    z-index: 10;
+    bottom: 45%;
+    right: 30px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    cursor: default;
+    padding-left: 14px;
+    padding-right: 5px;
+}
+
+.area-select2 .select2 .selection .select2-selection{
+    height: 80px;
+}
+.career-select2 .select2 .selection .select2-selection{
+    height: 80px;
+}
+
+.selec2-Area {
+    position: absolute;
+    z-index: 10;
+    bottom: 45%;
+    right: 30px;
+}
+
+.Area, .Career {
+    color: #bababa;
+}
+
+.modal-register .form-group input {
+    height: 80px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    overflow-y: auto;
+}
+
+.dropdown-custom {
+    left: -32px !important;
+}
+    .select2-search--inline.select2-search__field:focus{
+        border: none;
+    }.select2-search__field{
+        border: none;
+    }
+.select2-container--default .select2-dropdown .select2-search__field:focus, .select2-container--default .select2-search--inline .select2-search__field:focus {
+    outline: 0;
+    border: none;
+}
+.select2-container--default .select2-dropdown .select2-search__field, .select2-container--default .select2-search--inline .select2-search__field {
+  border: none;
+}
+.select2-container--default .select2-results>.select2-results__options {
+   display: none;
+}

@@ -1,0 +1,205 @@
+#occupation_Desciption {
+    height: 100px;
+}
+.select2-search--inline.select2-search__field:focus {
+    border: none;
+}
+.select2-search__field {
+    border: none;
+}
+.select2-container--default .select2-dropdown .select2-search__field:focus,
+.select2-container--default
+    .select2-search--inline
+    .select2-search__field:focus {
+    outline: 0;
+    border: none;
+}
+.select2-container--default .select2-dropdown .select2-search__field,
+.select2-container--default .select2-search--inline .select2-search__field {
+    border: none;
+}
+.select2-container--default .select2-results > .select2-results__options {
+    display: block;
+}
+#Acess_address {
+    height: 80px;
+}
+.btn-add-new-skill {
+    padding: 6px 12px;
+    background: #169bd5;
+    color: #ffff !important;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+}
+.skill-about {
+    display: flex;
+
+}
+#dynamic_filed #remoteSkill {
+    border: none !important;
+}
+.btn-remote {
+    padding: 7px 13px;
+    background: #dc143c;
+    color: #ffff !important;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+}
+.table-skills {
+    border: none;
+}
+.table-skills tr td {
+    border: none;
+}
+#dynamic_filed tr td a {
+    cursor: pointer;
+}
+#TextBoxContainer .btn-add-new-skill {
+    cursor: pointer;
+}
+.table-skills tr td {
+    padding-left: 0;
+    border: none;
+}
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 2px 4px 6px #847c7c;
+    border: 8px solid #baabab;
+}
+.image-about {
+    display: flex;
+}
+.image-about .remoteImage {
+    cursor: pointer;
+    margin: 4px 0px;
+}
+.image-about .btn-remote-image {
+    padding: 4px 12px;
+    background: #dc143c;
+    color: #ffff !important;
+    border-radius: 4px;
+    font-size: 12px;
+    border: none;
+}
+.image-item .image-show-item {
+    position: relative;
+    /*width: 280px;*/
+    height: 250px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.image-item .delete-image {
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 20;
+}
+.image-item .delete-image .fa-trash {
+    font-size: 20px;
+}
+.upload-btn-wrapper-image {
+    position: relative;
+    display: inline-block;
+}
+.upload-btn-wrapper-image .btn-upload {
+    color: #464646;
+    padding: 8px 20px;
+    font-size: 20px;
+}
+
+.upload-btn-wrapper-image input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    height: 0;
+}
+.image-about .fa-upload {
+    font-size: 26px;
+}
+/*--list--*/
+.occupation-img {
+    /* width: 314px;
+    border: solid 8px #ccc; */
+    /* width: 100px;
+    height: auto; */
+    /* height: 180px; */
+    padding: 0;
+}
+.image_occupation {
+    border:8px solid  #ccc;
+    width: 100%;
+    height: 100%;
+}
+.occupation-content {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    width: 100%;
+    height: auto;
+}
+.occupation-content:hover {
+    background-color: #a9a9a9;
+}
+.occupaion-title {
+    margin-bottom: 0px;
+    width: 100%;
+    overflow-y: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.occupaion-description {
+    width: auto;
+    /* height: 100px; */
+    height: 50%;
+    overflow-y: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /* / white-space: nowrap; / */
+}
+
+.edit__button {
+    background-color: #fad8d8;
+    margin-top: 0px;
+    width: 50px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    /* padding-top: 2px; */
+    padding: 7px;
+    color: black;
+}
+.delete__button {
+    background-color: #b23129;
+    margin-top: 0px;
+    width: 50px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.create__button {
+    background-color: #f59a2d;
+    font-size: 12px;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.occupation-action {
+    display: flex;
+    /* margin-top: 24px; */
+    /* margin-left: 2px; */
+
+}
+

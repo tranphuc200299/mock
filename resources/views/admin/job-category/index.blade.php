@@ -1,0 +1,100 @@
+@extends('admin.layouts.admin')
+@section('title')
+    Category
+@endsection
+@section('content')
+    <div class="content-wrapper">
+        <div class="content">
+            @if (Session::has('message'))
+                <p class="alert {{ Session::get('alert-class', 'alert-success') }}">
+                    {{ Session::get('message') }}
+                </p>
+            @endif
+            <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4 p-3">
+                <div class="d-flex justify-content-between mb-3">
+                    <h3 class="d-inline-block">List category</h3>
+                    <a href="{{ route('categoryjob.create') }}" id="category-create" class="btn-add-new">
+                        <i class="fas fa-plus"></i></a>
+                </div>
+
+                <div id="list-category">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table id="example2" class="table table-bordered" role="grid" aria-describedby="example2_info">
+                                <thead class="thead-light">
+                                    <tr role="row">
+                                        <th class="sorting sorting_asc">ID</th>
+                                        <th class="sorting"> Name</th>
+                                        <th class="sorting">Description</th>
+                                        <th class="sorting"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($category as $Key => $categories)
+                                        <tr class="odd">
+                                            <td class="dtr-control sorting_1" tabindex="0">{{ $categories->id }}</td>
+                                            <td> {{ $categories->name }}</td>
+                                            <td> {{ $categories->description }}</td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="{{ route('categoryjob.edit', [$categories->id]) }}">
+                                                        <button class="btn-edit"><i
+                                                                class="fas fa-pen"></i></button>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5">
+                        </div>
+                        <div class="col-sm-12 col-md-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                {!! $category->links() !!}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+@endsection
+<!--- set timeout message-->
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@2.8.2/dist/alpine.min.js"></script>
+    <script>
+        $("document").ready(function() {
+            setTimeout(function() {
+                $(".alert-success").remove();
+            }, 3000);
+
+        });
+    </script>
+@endpush
+<!----->
+@push('scripts')
+    <script>
+        // event click pagination category
+        $(document).on('click', '.pagination a', function(event) {
+            event.preventDefault();
+            var page = $(this).attr('href').split('page=')[1];
+            fetch_data(page);
+        });
+
+        // fetch data pagination company
+        function fetch_data(page) {
+            $.ajax({
+                url: URL_CATEGORY_INDEX + "?page=" + page,
+                method: "GET",
+                success: function(data) {
+                    $("#list-category").html(data.body);
+                }
+            });
+        }
+    </script>
+@endpush

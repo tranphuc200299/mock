@@ -1,0 +1,27 @@
+.form-password-register{
+    display: flex;
+    border-radius: 5px;
+}
+.icon-show-password{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 5%;
+}
+.icon-show-password .fa-eye{
+    display: none;
+}
+.icon-show-password {
+    /* display: flex; */
+    align-items: center;
+    height: 100%;
+    z-index: 2px;
+    /* margin-right: -4%; */
+    position: absolute;
+    right: 12px;
+    top: -6%;
+    font-size: 1.6rem;
+}
+.form-password-register-item{
+    width: 100%;
+}

@@ -1,0 +1,131 @@
+.text__confirm-one{
+    color: #1E1E1E;
+    font-size: 20px;
+}
+.text__confirm-two{
+    font-size: 14px;
+    color: #0EAFFF;
+}
+.btn__back-home {
+    /* width: 294px; */
+    width: 40%;
+    /* height: 50px; */
+    background-color:#FFFFFF; 
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #004AF8;
+border-radius: 7px;
+}
+.text__btn-back {
+    text-decoration: none;
+    color: #004AF8;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.col-style{
+    padding-left: 20px;
+}
+.icon__upfile{
+    margin-right: 10px;
+}
+img.icon__upfile {
+    margin-bottom: 16%;
+}
+/*----responsive---*/
+@media screen and (max-width: 576px) {
+
+    .btn__back-home  {
+        /* width: 345px; */
+        width:100%;
+        /* height: 50px; */
+        background-color:#FFFFFF; 
+        text-align: center;
+        border-radius: 7px;
+        margin: 0 auto;
+    
+    }
+    .text__btn-back {
+        text-decoration: none;
+        color: #004AF8;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 12%;
+    }
+    .col-style{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+    .thumb-nail-register-pages.container.mt-4 {
+        display:none;
+    }
+    .profil-left {
+        display:none;
+    }
+    .text__confirm-one {
+        font-size: 18px;
+    } 
+    
+    .text__two{ 
+        font-size: 13px;
+    }
+    .btn__back-home {
+  margin-bottom: 10%;
+    }
+    img.icon__upfile {
+        margin-bottom: 16%;
+    }
+  .text__top{
+    display: none;
+  }
+  hr.profile-hr {
+    display: none;
+}
+    .setting-profile {
+        background-color: #f5f9fe;
+        max-width: 100%;
+    }
+    .hr__one {
+        margin-bottom: auto;
+        width: 100%;
+    }
+    .hr__two {
+        margin-bottom: auto;
+        width: 100%;
+    }
+    div#myBtn {
+        margin-top: 4%;
+    }
+    .btn__back-home {
+        background-color:#FFFFFF; 
+        text-align: center;
+    border-radius: 7px;
+    }
+   .i__fa-class{
+        margin-left: 3%;
+    }
+    .content-header.content-footer {
+        margin-top: 10%;
+    }
+
+    .setting-profile ul li a {
+        text-decoration: none;
+        color: #4B4B4B;
+    }
+}
+@media screen and (min-width: 768px) {
+    .button-up-top{
+        display:none;
+    }
+
+    .setting-profile {
+        background-color:none;
+        max-width: 100%;
+    }
+    .hr__one,
+    .hr__two{
+       display:none;
+    }
+ 
+}

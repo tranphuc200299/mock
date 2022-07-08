@@ -1,0 +1,325 @@
+@import "_variables.css";
+/*responsive*/
+$break-tablet: 1280px;
+$break-ipad-pro: 1024px;
+$break-ipad: 768px;
+$break-mobile: 414px;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+//@media (width: 1366px) {
+//    .container {
+//        margin-left: 188px !important;
+//        margin-right: 188px !important;
+//    }
+//}
+//@media (min-width: $break-tablet) {
+//    .container {
+//        margin-left: 150px !important;
+//        margin-right: 150px !important;
+//    }
+//}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    @media (max-width: $break-ipad-pro) {
+        justify-content: space-between;
+    }
+
+    .logo {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-900) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-51) var(--unnamed-font-family-source-han-sans);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-004af8);
+        text-align: left;
+        font: normal normal 900 30px/51px Source Han Sans;
+        letter-spacing: 0px;
+        color: var(--unnamed-color-004af8);
+        cursor: pointer;
+    }
+
+    .notifications {
+        display: flex;
+        align-items: center;
+
+        .message {
+            padding-left: 20px;
+            padding-right: 50px;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--unnamed-color-808080);
+            text-align: left;
+            font: normal normal normal 12px/18px Hiragino Kaku Gothic Pro;
+            letter-spacing: 0px;
+            color: #808080;
+            @media (max-width: $break-ipad-pro) {
+                display: none;
+            }
+        }
+
+        .keep-list, .browsing-history, .login-responsive {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-right: 1px solid var(--unnamed-color-808080);
+            cursor: pointer;
+            @media (max-width: $break-ipad-pro) {
+                border: none;
+            }
+
+            p {
+                font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+                letter-spacing: var(--unnamed-character-spacing-0);
+                color: var(--unnamed-color-333333);
+                text-align: center;
+                font: normal normal normal 12px/16px Hiragino Kaku Gothic Pro;
+                letter-spacing: 0px;
+                color: #333333;
+                @media (max-width: $break-ipad-pro) {
+                    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-8)/var(--unnamed-line-spacing-11) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+                    letter-spacing: var(--unnamed-character-spacing-0);
+                    color: var(--unnamed-color-004af8);
+                    text-align: center;
+                    font: normal normal normal 8px/11px Hiragino Kaku Gothic Pro;
+                    letter-spacing: 0px;
+                    color: #004AF8;
+                }
+            }
+
+            img {
+                margin-bottom: 6px;
+            }
+
+            label {
+                position: absolute;
+                top: -5px;
+                right: 30px;
+                font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-9)/var(--unnamed-line-spacing-14) var(--unnamed-font-family-hiragino-kaku-gothic-pro) !important;
+                letter-spacing: var(--unnamed-character-spacing-0) !important;
+                color: var(--unnamed-color-ffffff) !important;
+                text-align: center;
+                font: normal normal normal 9px/14px Hiragino Kaku Gothic Pro;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                background: var(--unnamed-color-0eafff) 0% 0% no-repeat padding-box;
+                border: 1px solid var(--unnamed-color-ffffff);
+                background: #0EAFFF 0% 0% no-repeat padding-box;
+                border: 1px solid #FFFFFF;
+                padding: 3px 8px;
+                border-radius: 50%;
+                @media (max-width: $break-ipad-pro) {
+                    right: 22px;
+                    padding: 2px 7px;
+                }
+            }
+        }
+
+        .keep-list {
+            border-left: 1px solid var(--unnamed-color-808080);
+            @media (max-width: $break-ipad-pro) {
+                border: none;
+            }
+
+            img {
+                @media (max-width: $break-ipad-pro) {
+                    display: none;
+                }
+            }
+
+            .star-blue {
+                display: none;
+                @media (max-width: $break-ipad-pro) {
+                    display: block;
+                }
+            }
+
+        }
+
+        .browsing-history {
+            @media (max-width: $break-ipad-pro) {
+                display: none !important;
+            }
+
+            label {
+                right: 18px;
+            }
+        }
+
+        p {
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--unnamed-color-808080);
+            text-align: left;
+            font: normal normal normal 12px/18px Hiragino Kaku Gothic Pro;
+            letter-spacing: 0px;
+            color: var(--unnamed-color-808080);
+        }
+
+        .login-responsive {
+            padding: 0px;
+
+            .login {
+                display: none;
+                text-align: center;
+                @media (max-width: $break-ipad-pro) {
+                    display: block !important;
+                }
+            }
+        }
+
+        .open-menu {
+            display: none;
+            @media (max-width: $break-ipad-pro) {
+                display: block !important;
+            }
+
+            .line {
+                width: 30px;
+                height: 4px;
+                border-radius: 20px;
+                background-color: var(--unnamed-color-004af8);
+                margin-bottom: 7px;
+            }
+        }
+
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        @media (max-width: $break-ipad-pro) {
+            display: none;
+        }
+
+        .btn-sign-in {
+            background: var(--unnamed-color-0eafff) 0% 0% no-repeat padding-box;
+            background: #0EAFFF 0% 0% no-repeat padding-box;
+            border-radius: 7px;
+            padding: 7px 27px;
+            margin-left: 29px;
+            margin-right: 10px;
+
+            a {
+                font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+                letter-spacing: var(--unnamed-character-spacing-0);
+                color: var(--unnamed-color-ffffff);
+                text-align: center;
+                font: normal normal normal 16px/24px Hiragino Kaku Gothic Pro;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+            }
+        }
+
+        .btn-login {
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            border: 2px solid var(--unnamed-color-004af8);
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 2px solid #004AF8;
+            border-radius: 7px;
+            padding: 5px 27px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            a {
+                font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+                letter-spacing: var(--unnamed-character-spacing-0);
+                color: var(--unnamed-color-004af8);
+                text-align: center;
+                font: normal normal normal 16px/24px Hiragino Kaku Gothic Pro;
+                letter-spacing: 0px;
+                color: #004AF8;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .login-success {
+            margin-left: 50px;
+            display: none;
+        }
+
+    }
+}
+.over_lay{
+    @media (max-width: $break-ipad-pro) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 20;
+        opacity: 0.5;
+        background-color: #5c5c5c;
+        display: none;
+    }
+}
+.menu {
+    background: var(--unnamed-color-004af8) 0% 0% no-repeat padding-box;
+    background: #004AF8 0% 0% no-repeat padding-box;
+    transition: ease-out 1s;
+    @media (max-width: $break-ipad-pro) {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        right: 0;
+        bottom: 0;
+        width: 50vw;
+        height: 100vh;
+        z-index: 999;
+    }
+    @media (max-width: $break-ipad) {
+        width: 100vw;
+    }
+    .close-menu{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        display: none;
+        @media (max-width: $break-ipad-pro) {
+            display: block;
+        }
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 13px 110px;
+        @media (max-width: $break-ipad-pro) {
+            padding: 0;
+            margin-top: 50px;
+            flex-direction: column;
+        }
+        li {
+            padding-left: 50px;
+            padding-right: 50px;
+            list-style-type: none;
+            @media (max-width: $break-ipad-pro) {
+                margin-top: 20px;
+            }
+            a {
+                text-decoration: none;
+                font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+                letter-spacing: var(--unnamed-character-spacing-0);
+                color: var(--unnamed-color-ffffff);
+                text-align: center;
+                font: normal normal normal 16px/24px Hiragino Kaku Gothic Pro;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

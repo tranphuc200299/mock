@@ -1,0 +1,333 @@
+.menu-scroll {
+    height: 68px;
+    background: var(--unnamed-color-004af8) 0% 0% no-repeat padding-box;
+    background: #004AF8 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2392156863);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.menu-scroll .list-search {
+    background: #FFFFFF;
+    height: 53px;
+    border-radius: 3px;
+    cursor: text;
+}
+.menu-scroll .list-search .list-date {
+    height: 53px;
+    margin-bottom: 0;
+    width: 60%;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-1e1e1e);
+    text-align: left;
+    font: normal bold normal 16px/24px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+}
+@media (max-width: 768px) {
+    .menu-scroll .list-search .list-date {
+        width: 48%;
+    }
+}
+@media (width: 1024px) {
+    .menu-scroll .list-search .list-date {
+        width: 74%;
+    }
+}
+@media (max-width: 1024px) {
+    .menu-scroll .list-search .list-date {
+        font: normal bold normal 10px/24px Hiragino Kaku Gothic Pro;
+    }
+}
+.menu-scroll .list-search .result p {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-1e1e1e);
+    text-align: left;
+    font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+}
+@media (max-width: 1024px) {
+    .menu-scroll .list-search .result p {
+        font: normal bold normal 10px/24px Hiragino Kaku Gothic Pro;
+    }
+}
+.menu-scroll .list-search .result .count-result {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-22)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-004af8);
+    text-align: left;
+    font: normal normal normal 16px/33px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #004AF8;
+}
+@media (max-width: 1024px) {
+    .menu-scroll .list-search .result .count-result {
+        font: normal bold normal 10px/24px Hiragino Kaku Gothic Pro;
+    }
+}
+.menu-scroll .change-filter {
+    cursor: pointer;
+}
+.menu-scroll .change-filter .btn-change-filter {
+    background: var(--unnamed-color-0eafff) 0% 0% no-repeat padding-box;
+    background: #0EAFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    padding: 7px 10px;
+    text-align: center;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-15)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-hiragino-kaku-gothic-pro);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal normal 15px/23px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .menu-scroll .change-filter .btn-change-filter {
+        padding: 3px 1px;
+    }
+}
+@media (max-width: 1024px) {
+    .menu-scroll .change-filter .btn-change-filter {
+        font: normal bold normal 6px/24px Hiragino Kaku Gothic Pro;
+    }
+}
+.menu-scroll .favorite-history {
+    margin-left: 16px;
+}
+@media (max-width: 767px) {
+    .menu-scroll .favorite-history {
+        display: none;
+    }
+}
+.menu-scroll .favorite-history .keep-list {
+    border-right: 1px solid var(--unnamed-color-808080);
+}
+.menu-scroll .favorite-history .keep-list a label {
+    top: 1px;
+    right: 38px;
+}
+.menu-scroll .favorite-history .keep-list, .menu-scroll .favorite-history .browsing-history {
+    height: 53px;
+}
+.menu-scroll .favorite-history .keep-list a, .menu-scroll .favorite-history .browsing-history a {
+    padding: 5px 0px 0px 0px;
+    border-right: none;
+}
+.menu-scroll .favorite-history .keep-list a label, .menu-scroll .favorite-history .browsing-history a label {
+    padding: 2px 7px;
+    top: 1px;
+    right: 38px !important;
+}
+@media (max-width: 768px) {
+    .menu-scroll .favorite-history .keep-list a label, .menu-scroll .favorite-history .browsing-history a label {
+        top: 2px;
+        right: 22px !important;
+    }
+}
+.menu-scroll .favorite-history .browsing-history-scroll {
+    display: block !important;
+}
+
+.modal__header .modal__title {
+    text-align: left;
+    font: normal normal normal 22px/33px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #004AF8;
+}
+.modal__header .result p {
+    margin-right: 10px;
+    text-align: center;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    color: black;
+}
+.modal__header .result p .count-result {
+    text-align: left;
+    font: normal bold normal 24px/36px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #FF5151;
+    margin-bottom: 15px;
+}
+
+.filter-category-body {
+    background-color: white !important;
+}
+
+.filter-body {
+    background-color: white !important;
+}
+.filter-body .filter-box label {
+    font: normal normal normal 17px/17px Hiragino Kaku Gothic Pro;
+    color: black;
+}
+.filter-body .filter-box .filter-item {
+    height: 300px;
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.filter-body .filter-box .filter-item::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.filter-body .filter-box .filter-item::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: #999999;
+    background-color: #999999;
+}
+.filter-body .filter-box .filter-item::-webkit-scrollbar-track {
+    -webkit-box-shadow: #999999;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+.filter-body .filter-box .filter-item .item-content {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #c5c5c5;
+    cursor: pointer;
+}
+.filter-body .filter-box .filter-item .item-content .name {
+    margin-right: 10px;
+    text-align: center;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    color: black;
+}
+.filter-body .filter-box .filter-item .item-content .item-result {
+    text-align: center;
+    font: normal normal normal 12px/13px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #cccccc;
+}
+.filter-body .filter-box .filter-item .item-content .item-active {
+    margin-left: 10px;
+    text-align: center;
+    font: normal normal normal 12px/14px Hiragino Kaku Gothic Pro;
+    color: #cccccc;
+    background-color: #004AF8;
+    padding: 1px 5px;
+    display: none;
+}
+.filter-body .filter-box .filter-item .item-content .description {
+    margin-top: 5px;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #cccccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.filter-body .filter-box .filter-item .item-content input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.filter-body .filter-box .filter-item .item-content .name {
+    margin-right: 10px;
+    text-align: center;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    color: black;
+}
+.filter-body .filter-box .filter-item .item-content .result {
+    text-align: center;
+    font: normal normal normal 12px/13px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #cccccc;
+}
+.filter-body .filter-box .filter-item .item-content .sub-item-all {
+    margin-bottom: 10px;
+}
+.filter-body .filter-box .filter-item .item-content .sub-item-all .name {
+    margin-right: 10px;
+    text-align: center;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    color: black;
+    cursor: pointer;
+}
+.filter-body .filter-box .filter-item .item-content .sub-item-all .result {
+    text-align: center;
+    font: normal normal normal 12px/13px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #cccccc;
+}
+.filter-body .filter-box .filter-item .item-content .sub-item {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.filter-body .filter-box .filter-item .item-content .sub-item .name {
+    margin-right: 10px;
+    text-align: center;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    color: black;
+    cursor: pointer;
+}
+.filter-body .filter-box .filter-item .item-content .sub-item .result {
+    text-align: center;
+    font: normal normal normal 12px/13px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #cccccc;
+}
+.filter-body .filter-box .filter-item .item-content-active {
+    background: #f2f9ff;
+}
+.filter-body .filter-box .filter-item .accordion-item .accordion-header {
+    padding: 0;
+}
+.filter-body .filter-box .filter-item .accordion-item .accordion-header .accordion-button {
+    padding: 10px;
+    background: white;
+    font: normal normal normal 12px/14px Hiragino Kaku Gothic Pro;
+    color: black;
+}
+.filter-body .filter-box .filter-item .accordion-item .filter-route input {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.filter-body .filter-box .filter-item .accordion-item .filter-route label {
+    margin-right: 10px;
+    text-align: center;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.filter-body .filter-box .filter-item .accordion-item .filter-route .item-result {
+    text-align: center;
+    font: normal normal normal 12px/13px Hiragino Kaku Gothic Pro;
+    letter-spacing: 0px;
+    color: #cccccc;
+}
+.filter-body .btn-action .btn-filter {
+    background-color: #0EAFFF;
+    border-color: #0EAFFF;
+    padding: 6px 20px;
+}
+.filter-body .btn-action .btn-filter:focus {
+    border-color: #0EAFFF;
+}
+.filter-body .btn-action .btn-filter:hover {
+    opacity: 0.8;
+}
+.filter-body .btn-action .clear-filter {
+    cursor: pointer;
+    margin-top: 10px;
+    font: normal normal normal 14px/16px Hiragino Kaku Gothic Pro;
+    display: block;
+    color: #9f9f9f;
+    font-size: 12px;
+}
+.filter-body .btn-action .clear-filter:hover {
+    text-decoration: underline;
+}
